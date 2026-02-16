@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MYCUT FILM | Professional Media Production</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              display: ['"Outfit"', 'sans-serif'],
+            },
+            colors: {
+              border: "hsl(var(--border))",
+              input: "hsl(var(--input))",
+              ring: "hsl(var(--ring))",
+              background: "#09090b", // zinc-950
+              foreground: "#fafafa", // zinc-50
+              primary: {
+                DEFAULT: "#eab308", // yellow-500
+                foreground: "#000000",
+              },
+              secondary: {
+                DEFAULT: "#27272a", // zinc-800
+                foreground: "#fafafa",
+              },
+              muted: {
+                DEFAULT: "#27272a",
+                foreground: "#a1a1aa",
+              },
+              accent: {
+                DEFAULT: "#27272a",
+                foreground: "#fafafa",
+              },
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      :root {
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 48 96% 53%; /* Yellow ring */
+      }
+      body {
+        background-color: #09090b;
+        color: #fafafa;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Outfit', sans-serif;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #09090b; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3f3f46; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #eab308; 
+      }
+      .glass-nav {
+        background: rgba(9, 9, 11, 0.8);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      
+      /* Animation Utility Classes */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        will-change: opacity, transform;
+      }
+      .animate-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .delay-100 { transition-delay: 100ms; }
+      .delay-200 { transition-delay: 200ms; }
+      .delay-300 { transition-delay: 300ms; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "clsx": "https://esm.sh/clsx@^2.1.1",
+    "tailwind-merge": "https://esm.sh/tailwind-merge@^3.4.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
