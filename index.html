@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYCUT FILM | Professional Media Production</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="MYCUT FILM Co., Ltd. — Cambodia's leading fully equipped production house & media agency. Over 10 years of experience in video production, event management, live streaming, PR, and digital marketing." />
+    <meta name="keywords" content="MYCUT FILM, Cambodia, production house, video production, event management, live streaming, media agency, PR services, digital marketing, Phnom Penh" />
+    <meta name="author" content="MYCUT FILM Co., Ltd." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+    <title>MYCUT FILM | Cambodia's Leading Production House & Media Agency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -21,14 +25,14 @@
               border: "hsl(var(--border))",
               input: "hsl(var(--input))",
               ring: "hsl(var(--ring))",
-              background: "#09090b", // zinc-950
-              foreground: "#fafafa", // zinc-50
+              background: "#09090b",
+              foreground: "#fafafa",
               primary: {
-                DEFAULT: "#eab308", // yellow-500
+                DEFAULT: "#eab308",
                 foreground: "#000000",
               },
               secondary: {
-                DEFAULT: "#27272a", // zinc-800
+                DEFAULT: "#27272a",
                 foreground: "#fafafa",
               },
               muted: {
@@ -57,7 +61,7 @@
       :root {
         --border: 240 3.7% 15.9%;
         --input: 240 3.7% 15.9%;
-        --ring: 48 96% 53%; /* Yellow ring */
+        --ring: 48 96% 53%;
       }
       body {
         background-color: #09090b;
@@ -105,21 +109,9 @@
       .delay-200 { transition-delay: 200ms; }
       .delay-300 { transition-delay: 300ms; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "clsx": "https://esm.sh/clsx@^2.1.1",
-    "tailwind-merge": "https://esm.sh/tailwind-merge@^3.4.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
