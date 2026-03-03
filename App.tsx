@@ -6,6 +6,8 @@ import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Artists from './pages/Artists';
+import ArtistDetail from './pages/ArtistDetail';
 import { Button } from './components/ui';
 
 const ScrollToTop = () => {
@@ -70,8 +72,9 @@ const Header = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/portfolio', label: 'Portfolio' },
+    { path: '/artists', label: 'Artists' },
     { path: '/services', label: 'Services' },
-    { path: '/about', label: 'About' },
+    { path: '/about', label: 'About' }
   ];
 
   return (
@@ -260,6 +263,7 @@ const Footer = () => (
                   <li><Link to="/portfolio" className="hover:text-yellow-500 transition-colors">Portfolio</Link></li>
                   <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Services</Link></li>
                   <li><Link to="/about" className="hover:text-yellow-500 transition-colors">About Us</Link></li>
+                  <li><Link to="/artists" className="hover:text-yellow-500 transition-colors">Artists</Link></li>
               </ul>
           </div>
       </div>
@@ -282,6 +286,8 @@ export default function App() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/artists" element={<Artists />} />
+                <Route path="/artists/:id" element={<ArtistDetail />} />
             </Routes>
             </main>
             <Footer />

@@ -5,7 +5,8 @@ export const translations = {
       portfolio: "Portfolio",
       services: "Services",
       about: "About",
-      contact: "Contact Us"
+      contact: "Contact Us",
+      artists: "Artists"
     },
     hero: {
       badge: "WE STRIVE FOR THE BEST!",
@@ -80,7 +81,8 @@ export const translations = {
       portfolio: "ស្នាដៃរបស់យើង",
       services: "សេវាកម្ម",
       about: "អំពីយើង",
-      contact: "ទំនាក់ទំនង"
+      contact: "ទំនាក់ទំនង",
+      artists: "សិល្បករ"
     },
     hero: {
       badge: "យើងខិតខំដើម្បីល្អបំផុត!",
